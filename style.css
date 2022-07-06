@@ -8,8 +8,19 @@ a {
    text-decoration: none;
 }
 
+html {
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+}
+
+body.dark {
+  --bg-color: #00082f;
+  --text-color: #ffffff;
+}
+
 body {
-  background: #edf2ff;
+  background: var(--bg-color);
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -68,7 +79,6 @@ ul li a:hover {
 footer {
   font-weight: 500;
   font-size: 12px;
-  color: #00082f;
   opacity: 0.6;
   transition: opacity 400ms;
 }
@@ -78,6 +88,6 @@ footer:hover {
 }
 
 footer a {
-  color: #00082f;
+  color: var(--text-color);
 }
 
